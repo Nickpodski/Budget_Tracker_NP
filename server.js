@@ -13,7 +13,7 @@ app.use(logger("dev"));
 app.use(compression());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-s
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 mongoose.connect(process.env.MONGOD_URI, {
